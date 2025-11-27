@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your cart - Shoppymadeeasy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="section section-alt">
+    <div class="cart-header">
+      <h1>Your cart</h1>
+      <a href="index.html" class="btn btn-small">← Continue shopping</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="cart-container">
+      <p id="cart-empty">Your cart is empty.</p>
+
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Total</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <!-- items added by JavaScript -->
+        </tbody>
+      </table>
+
+      <div class="cart-summary">
+        <p>Cart total: <span id="cart-total">$0.00</span></p>
+        <p class="cart-note">For now you can complete your order by emailing your cart to us.</p>
+        <a id="checkout-link" href="mailto:shoppymadeeasy@gmail.com" class="btn">
+          Send cart by email
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <script src="cart.js"></script>
+</body>
+</html>
